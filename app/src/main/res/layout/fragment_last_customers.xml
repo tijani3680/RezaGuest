@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myfavoriteBg"
+        android:layoutDirection="rtl"
+        tools:context=".view.fragments.FragmentLastCustomers">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarLastCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sahelbold"
+                    android:gravity="center"
+                    android:text="@string/t7"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/rel_fragmentLastCustomer_emptyBox"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+
+                android:layout_centerInParent="true"
+                android:id="@+id/animation_emptyBox"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/empty_box" />
+            <TextView
+                android:textColor="@color/popaGreenApp"
+                android:fontFamily="@font/sahelbold"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/animation_emptyBox"
+                android:gravity="center"
+                android:text="@string/t61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressbar_fragmentLastCustomer"
+            style="@style/SpinKitView.Large.FadingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            app:SpinKit_Color="@color/colorProgressbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_fragmentLastCustomers_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarLastCustomer"
+            android:layout_margin="5dp" />
+
+
+    </RelativeLayout>
+
+</layout>
+

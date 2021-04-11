@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="UserInformation"
+            type="com.tijani.rezaguestmvvm.model.Users" />
+    </data>
+
+    <RelativeLayout
+        android:layout_margin="6dp"
+        android:background="@drawable/shape_rel_customer"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            app:cardBackgroundColor="@color/white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:padding="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_item_recycler_operator_name"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imgIconName"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_customer" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgIconName"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@{UserInformation.fullName,default = Ablofazl}"
+                        android:id="@+id/txt_item_recycler_operators_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/rel_item_recycler_operator_name"
+                    android:id="@+id/rel_item_recycler_operator_shenaseh"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imgIconShenaseh"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_shenaseh" />
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgIconShenaseh"
+                        android:fontFamily="@font/sahelmamoli"
+                        android:text="@{UserInformation.code,default = 101}"
+                        android:id="@+id/txt_item_recycler_operators_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/gray800"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/rel_item_recycler_operator_shenaseh"
+                    android:id="@+id/rel_item_recycler_operator_userName"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imgIconPhone"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_edt_username" />
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgIconPhone"
+                        android:fontFamily="@font/sahelmamoli"
+                        android:text="@{UserInformation.userName,default = tijani3680}"
+                        android:id="@+id/txt_item_recycler_operators_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/gray800"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/rel_item_recycler_operator_userName"
+                    android:id="@+id/rel_item_recycler_operator_password"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imgIconPass"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_edt_lock" />
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgIconPass"
+                        android:fontFamily="@font/sahelmamoli"
+                        android:text="@{UserInformation.password,default = 3442}"
+                        android:id="@+id/txt_item_recycler_operators_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/gray800"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:padding="8dp"
+                    android:layout_below="@+id/rel_item_recycler_operator_password"
+                    android:id="@+id/rel_item_recycler_operator_deleteOperator"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/imgIconAddToBlakList"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_delete" />
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgIconAddToBlakList"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@string/txt24"
+                        android:id="@+id/txt_item_recycler_Operators_deleteOperators"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/colorToolbar"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</layout>

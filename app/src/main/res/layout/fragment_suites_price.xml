@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myfavoriteBg"
+        android:layoutDirection="rtl"
+        tools:context=".view.fragments.FragmentSuitesPrice">
+
+
+        //// toolbar
+
+        <RelativeLayout
+            android:id="@+id/relative_fragmentSuitesPrice_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_fragmentSuitesPrice_imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/txt32"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        ////
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressbar_fragmentSuitesPrice"
+            style="@style/SpinKitView.Large.FadingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            app:SpinKit_Color="@color/colorProgressbar" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_fragmentSuitesPrice_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_fragmentSuitesPrice_Toolbar"
+            android:layout_margin="8dp" />
+
+    </RelativeLayout>
+
+</layout>

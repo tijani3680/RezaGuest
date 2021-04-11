@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layoutDirection="rtl"
+        android:background="@color/weibo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragments.FragmentSplash">
+
+        <RelativeLayout
+            android:id="@+id/fragmentSplash_relError"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/fragmentSplash_Anim"
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/no_internet_anim" />
+            <TextView
+                android:id="@+id/txt_splash_noInternet"
+                android:text="@string/t57"
+                android:fontFamily="@font/sahelbold"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:padding="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragmentSplash_Anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/shape_try"
+                android:id="@+id/lil_try"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_splash_noInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_fragmentSplash"
+                    android:src="@drawable/ic_try"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sahelsemibold"
+                    android:textSize="14sp"
+                    android:text="@string/t58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</layout>

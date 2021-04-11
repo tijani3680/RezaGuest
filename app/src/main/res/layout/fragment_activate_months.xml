@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myfavoriteBg"
+        android:layoutDirection="rtl"
+        tools:context=".view.fragments.FragmentActivateMonths">
+
+
+        //// toolbar
+
+        <RelativeLayout
+            android:id="@+id/relative_fragmentActivateMonths_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_fragmentActivateMonths_imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/txt37"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        ////
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_fragmentActivateMonths_Toolbar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n1"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m1"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n2"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m2"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n3"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m3"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n4"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m4"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM4"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n5"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m5"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM5"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n6"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m6"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM6"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n7"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m7"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM7"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n8"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m8"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM8"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n9"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m9"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM9"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n10"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m10"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM10"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n11"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m11"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM11"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_rel_customer"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n12"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m12"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/swichM12"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        app:colorBorder="@color/cobalt"
+                        app:colorOn="@color/popaGreenApp"
+                        app:on="false"
+                        app:textOff="@string/txt27"
+                        app:textOn="@string/txt26" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_fragmentActivateMonths_prg"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:background="@drawable/shape_rel_prg"
+            android:layout_height="80dp">
+
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</layout>

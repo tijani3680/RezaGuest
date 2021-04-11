@@ -1,0 +1,602 @@
+<resources>
+    <string name="app_name">مهمان سرای امام رضا (ع)</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="t1">مهمان سرای امام رضا (ع)</string>
+    <string name="t2">ورود کاربر</string>
+    <string name="t3">ورود به حساب کاربری</string>
+    <string name="t4">خروج از حساب کاربری</string>
+    <string name="t5">منو</string>
+    <string name="t6">پنل مدیریت</string>
+    <string name="t7">مشتریان سابق</string>
+    <string name="t8">تغییر نام کاربری و رمز ورود</string>
+    <string name="t9">لیست سیاه</string>
+    <string name="t10">درباره ما</string>
+    <string name="t11">ارتباط با ما</string>
+    <string name="t12">قفل برنامه</string>
+    <string name="t13">حذف قفل برنامه</string>
+    <string name="t14">غیر فعال کردن قفل برنامه</string>
+
+
+    <string name="t15">تمامی حقوق این برنامه متعلق به مهمان سرای امام رضا (ع) است.</string>
+    <string name="t16">نسخه: 1.0</string>
+    <string name="t17">تاریخ انتشار: 1399.04.01</string>
+    <string name="t18">ایده پرداز:</string>
+    <string name="t19">محمد سلامت</string>
+    <string name="t20">ارتباط با برنامه نویس:</string>
+    <string name="t21">tijanima.71@gmail.com</string>
+    <string name="t22">0915 0483680</string>
+
+
+    <string name="t23">آدرس</string>
+    <string name="address">مشهد،انتهای امام خمینی 49،بین ثامن الائمه 2 و4،پلاک 18/1</string>
+    <string name="t29">051-38549657</string>
+    <string name="t30">جستجو</string>
+    <string name="t31">لیست سیاه</string>
+    <string name="t32">حذف از لیست سیاه</string>
+    <string name="t33">توضیحات:</string>
+    <string name="t34">تخلفات مشتری</string>
+    <string name="t35">مشتری از لیست سیاه حذف می شود،ادامه می دهید؟</string>
+    <string name="t36">اطلاعات مشتری</string>
+    <string name="t37">انصراف</string>
+    <string name="t38">تایید</string>
+    <string name="t39">مشتری در لیست سیاه قرار دارد،ادامه می دهید؟</string>
+    <string name="t40">ادامه</string>
+
+    <string name="t41">نام مشتری:</string>
+    <string name="t42">شناسه:</string>
+    <string name="t43">تلفن:</string>
+    <string name="t44">تاریخ رزرو:</string>
+    <string name="t45">اپراتور رزرو کننده:</string>
+    <string name="t46">لیست رزرو خالی است!</string>
+    <string name="t47">رزرو مشتری لغو می شود،ادامه می دهید؟</string>
+    <string name="t48">اپراتوری وجود ندارد!</string>
+    <string name="t49">اپراتور حذف می شود،ادامه می دهید؟</string>
+    <string name="t50">کلیه اطلاعات ماه مربوطه پاک می شود،ادامه می دهید؟</string>
+    <string name="t51">نام کاربری فعلی</string>
+    <string name="t52">رمز ورود فعلی</string>
+    <string name="t53">نام کاربری جدید</string>
+    <string name="t54">رمز ورود جدید</string>
+    <string name="t55">تکرار رمز ورود</string>
+    <string name="t56">کلمه عبور</string>
+    <string name="t57">مشکل در اتصال به اینترنت!</string>
+    <string name="t58">تلاش مجدد</string>
+    <string name="t59">امکان دسترسی به این ماه در حال حاضر وجود ندارد!</string>
+    <string name="t60">بستن</string>
+    <string name="t61">لیست مشتریان خالی است!</string>
+    <string name="t62">لیست سیاه خالی است!</string>
+
+
+
+    //// Text Hint EditText ....
+
+    <string name="e1">نام و نام خانوادگی</string>
+    <string name="e2">تلفن</string>
+    <string name="e3">شناسه</string>
+    <string name="e4">تعداد نفرات اولیه :</string>
+    <string name="e5">تعداد نفرات مازاد :</string>
+    <string name="e6">مشتری ویژه</string>
+    <string name="e7">هزینه :</string>
+    <string name="e8">هزینه نهایی :</string>
+    <string name="e9">مبلغ دریافتی (تومان)</string>
+    <string name="e10">شماره فیش پرداختی</string>
+    <string name="e11">کل هزینه اقامت:</string>
+    <string name="e12">مبلغ دریافتی:</string>
+    <string name="e13">شماره فیش پرداختی:</string>
+    <string name="e14">وضعیت حساب:</string>
+    <string name="e15">نام و نام خانوادگی</string>
+    <string name="e16">کد مربوطه</string>
+    <string name="e17">نام کاربری</string>
+    <string name="e18">تایید</string>
+    <string name="e19">کلمه عبور</string>
+    <string name="e20">ثبت تغییرات</string>
+
+
+    ////// Text button .....
+
+    <string name="txt1">ورود</string>
+    <string name="txt2">ذخیره</string>
+    <string name="txt3">حذف قفل برنامه</string>
+    <string name="txt4">تایید و ادامه ></string>
+    <string name="txt5">انصراف</string>
+    <string name="txt6">محاسبه هزینه</string>
+    <string name="txt7">روزهای انتخاب شده برای رزرو :</string>
+    <string name="txt8">ثبت اطلاعات</string>
+    <string name="txt9">روزهای رزرو شده:</string>
+    <string name="txt10">جزئیات</string>
+    <string name="txt11">افزودن بستانکاری</string>
+    <string name="txt12">لغو کردن رزرو</string>
+    <string name="txt13">انتخاب کنید</string>
+    <string name="txt14">مبلغ را به تومان وارد کنید</string>
+    <string name="txt15">رزرو مشتری با موفقیت لغو شد</string>
+
+    <string name="txt16">پنل مدیریت</string>
+    <string name="txt17">ایجاد اپراتور</string>
+    <string name="txt18">اپراتورها</string>
+    <string name="txt19">وضعیت سوئیت ها</string>
+    <string name="txt20">قیمت سوئیت ها</string>
+    <string name="txt21">وضعیت ماه ها</string>
+    <string name="txt22">گزارش درآمدی ها</string>
+    <string name="txt23">ریست کردن برنامه</string>
+    <string name="txt24">حذف اپراتور</string>
+    <string name="txt25">فعال کردن سوئیت ها</string>
+    <string name="txt26">فعال</string>
+    <string name="txt27">غیر فعال</string>
+    <string name="txt28">قیمت برای مشتریان عادی</string>
+    <string name="txt29">ویرایش قیمت ها</string>
+    <string name="txt30">قیمت برای مشتریان ویژه :</string>
+    <string name="txt31">قیمت برای افراد مازاد:</string>
+    <string name="txt32">قیمت سوئیت ها</string>
+    <string name="txt33">قیمت نفرات مازاد برای مشتریان ویژه</string>
+    <string name="txt34">قیمت نفرات مازاد برای مشتریان عادی</string>
+    <string name="txt35">قیمت برای مشتریان ویژه</string>
+    <string name="txt36">قیمت برای مشتریان عادی</string>
+    <string name="txt37">فعال کردن ماه ها</string>
+    <string name="txt38">گزارش درآمدی</string>
+
+    <string name="txt39">درآمدی =</string>
+    <string name="txt40">دریافتی =</string>
+    <string name="txt41">اختلاف =</string>
+    <string name="txt42">درآمدی سالانه=</string>
+    <string name="txt43">دریافتی سالانه=</string>
+    <string name="txt44">رمز ورود را وارد کنید</string>
+
+    /// Text Reset Months
+    <string name="resM1">ریست فروردین</string>
+    <string name="resM2">ریست اردیبهشت</string>
+    <string name="resM3">ریست خرداد</string>
+    <string name="resM4">ریست تیر</string>
+    <string name="resM5">ریست مرداد</string>
+    <string name="resM6">ریست شهریور</string>
+    <string name="resM7">ریست مهر</string>
+    <string name="resM8">ریست آبان</string>
+    <string name="resM9">ریست آذر</string>
+    <string name="resM10">ریست دی</string>
+    <string name="resM11">ریست بهمن</string>
+    <string name="resM12">ریست اسفند</string>
+    <string name="resM">ریست کلیه ماه ها</string>
+
+
+    /// Text Moths Name ...
+    <string name="m1">فروردین</string>
+    <string name="m2">اردیبهشت</string>
+    <string name="m3">خرداد</string>
+    <string name="m4">تیر</string>
+    <string name="m5">مرداد</string>
+    <string name="m6">شهریور</string>
+    <string name="m7">مهر</string>
+    <string name="m8">آبان</string>
+    <string name="m9">آذر</string>
+    <string name="m10">دی</string>
+    <string name="m11">بهمن</string>
+    <string name="m12">اسفند</string>
+
+
+    /// Text Suites Name ...
+    <string name="s1">سوئیت 1</string>
+    <string name="s2">سوئیت 2</string>
+    <string name="s3">سوئیت 3</string>
+    <string name="s4">سوئیت 4</string>
+    <string name="s5">سوئیت 5</string>
+    <string name="s6">سوئیت 6</string>
+    <string name="s7">سوئیت 7</string>
+    <string name="s8">سوئیت 8</string>
+    <string name="s9">سوئیت 9</string>
+    <string name="s10">سوئیت 10</string>
+    <string name="s11">سوئیت 11</string>
+    <string name="s12">سوئیت 12</string>
+
+    /// Text Days Farvardin ...
+    <string name="farvardin1">1 فروردین</string>
+    <string name="farvardin2">2 فروردین</string>
+    <string name="farvardin3">3 فروردین</string>
+    <string name="farvardin4">4 فروردین</string>
+    <string name="farvardin5">5 فروردین</string>
+    <string name="farvardin6">6 فروردین</string>
+    <string name="farvardin7">7 فروردین</string>
+    <string name="farvardin8">8 فروردین</string>
+    <string name="farvardin9">9 فروردین</string>
+    <string name="farvardin10">10 فروردین</string>
+    <string name="farvardin11">11 فروردین</string>
+    <string name="farvardin12">12 فروردین</string>
+    <string name="farvardin13">13 فروردین</string>
+    <string name="farvardin14">14 فروردین</string>
+    <string name="farvardin15">15 فروردین</string>
+    <string name="farvardin16">16 فروردین</string>
+    <string name="farvardin17">17 فروردین</string>
+    <string name="farvardin18">18 فروردین</string>
+    <string name="farvardin19">19 فروردین</string>
+    <string name="farvardin20">20 فروردین</string>
+    <string name="farvardin21">21 فروردین</string>
+    <string name="farvardin22">22 فروردین</string>
+    <string name="farvardin23">23 فروردین</string>
+    <string name="farvardin24">24 فروردین</string>
+    <string name="farvardin25">25 فروردین</string>
+    <string name="farvardin26">26 فروردین</string>
+    <string name="farvardin27">27 فروردین</string>
+    <string name="farvardin28">28 فروردین</string>
+    <string name="farvardin29">29 فروردین</string>
+    <string name="farvardin30">30 فروردین</string>
+    <string name="farvardin31">31 فروردین</string>
+
+
+    /// Text Days Ordibehesht ...
+    <string name="ordibehesht1">1 اردیبهشت</string>
+    <string name="ordibehesht2">2 اردیبهشت</string>
+    <string name="ordibehesht3">3 اردیبهشت</string>
+    <string name="ordibehesht4">4 اردیبهشت</string>
+    <string name="ordibehesht5">5 اردیبهشت</string>
+    <string name="ordibehesht6">6 اردیبهشت</string>
+    <string name="ordibehesht7">7 اردیبهشت</string>
+    <string name="ordibehesht8">8 اردیبهشت</string>
+    <string name="ordibehesht9">9 اردیبهشت</string>
+    <string name="ordibehesht10">10 اردیبهشت</string>
+    <string name="ordibehesht11">11 اردیبهش</string>
+    <string name="ordibehesht12">12 اردیبهشت</string>
+    <string name="ordibehesht13">13 اردیبهشت</string>
+    <string name="ordibehesht14">14 اردیبهش</string>
+    <string name="ordibehesht15">15 اردیبهشت</string>
+    <string name="ordibehesht16">16 اردیبهشت</string>
+    <string name="ordibehesht17">17 اردیبهشت</string>
+    <string name="ordibehesht18">18 اردیبهشت</string>
+    <string name="ordibehesht19">19 اردیبهشت</string>
+    <string name="ordibehesht20">20 اردیبهشت</string>
+    <string name="ordibehesht21">21 اردیبهشت</string>
+    <string name="ordibehesht22">22 اردیبهشت</string>
+    <string name="ordibehesht23">23 اردیبهشت</string>
+    <string name="ordibehesht24">24 اردیبهشت</string>
+    <string name="ordibehesht25">25 اردیبهشت</string>
+    <string name="ordibehesht26">26 اردیبهشت</string>
+    <string name="ordibehesht27">27 اردیبهشت</string>
+    <string name="ordibehesht28">28 اردیبهشت</string>
+    <string name="ordibehesht29">29 اردیبهشت</string>
+    <string name="ordibehesht30">30 اردیبهشت</string>
+    <string name="ordibehesht31">31 اردیبهشت</string>
+
+
+    /// Text Days Khordad ...
+    <string name="khordad1">1 خرداد</string>
+    <string name="khordad2">2 خرداد</string>
+    <string name="khordad3">3 خرداد</string>
+    <string name="khordad4">4 خرداد</string>
+    <string name="khordad5">5 خرداد</string>
+    <string name="khordad6">6 خرداد</string>
+    <string name="khordad7">7 خرداد</string>
+    <string name="khordad8">8 خرداد</string>
+    <string name="khordad9">9 خرداد</string>
+    <string name="khordad10">10 خرداد</string>
+    <string name="khordad11">11 خرداد</string>
+    <string name="khordad12">12 خرداد</string>
+    <string name="khordad13">13 خرداد</string>
+    <string name="khordad14">14 خرداد</string>
+    <string name="khordad15">15 خرداد</string>
+    <string name="khordad16">16 خرداد</string>
+    <string name="khordad17">17 خرداد</string>
+    <string name="khordad18">18 خرداد</string>
+    <string name="khordad19">19 خرداد</string>
+    <string name="khordad20">20 خرداد</string>
+    <string name="khordad21">21 خرداد</string>
+    <string name="khordad22">22 خرداد</string>
+    <string name="khordad23">23 خرداد</string>
+    <string name="khordad24">24 خرداد</string>
+    <string name="khordad25">25 خرداد</string>
+    <string name="khordad26">26 خرداد</string>
+    <string name="khordad27">27 خرداد</string>
+    <string name="khordad28">28 خرداد</string>
+    <string name="khordad29">29 خرداد</string>
+    <string name="khordad30">30 خرداد</string>
+    <string name="khordad31">31 خرداد</string>
+
+    /// Text Days Tir ...
+    <string name="tir1">1 تیر</string>
+    <string name="tir2">2 تیر</string>
+    <string name="tir3">3 تیر</string>
+    <string name="tir4">4 تیر</string>
+    <string name="tir5">5 تیر</string>
+    <string name="tir6">6 تیر</string>
+    <string name="tir7">7 تیر</string>
+    <string name="tir8">8 تیر</string>
+    <string name="tir9">9 تیر</string>
+    <string name="tir10">10 تیر</string>
+    <string name="tir11">11 تیر</string>
+    <string name="tir12">12 تیر</string>
+    <string name="tir13">13 تیر</string>
+    <string name="tir14">14 تیر</string>
+    <string name="tir15">15 تیر</string>
+    <string name="tir16">16 تیر</string>
+    <string name="tir17">17 تیر</string>
+    <string name="tir18">18 تیر</string>
+    <string name="tir19">19 تیر</string>
+    <string name="tir20">20 تیر</string>
+    <string name="tir21">21 تیر</string>
+    <string name="tir22">22 تیر</string>
+    <string name="tir23">23 تیر</string>
+    <string name="tir24">24 تیر</string>
+    <string name="tir25">25 تیر</string>
+    <string name="tir26">26 تیر</string>
+    <string name="tir27">27 تیر</string>
+    <string name="tir28">28 تیر</string>
+    <string name="tir29">29 تیر</string>
+    <string name="tir30">30 تیر</string>
+    <string name="tir31">31 تیر</string>
+
+
+    /// Text Days Mordad ...
+    <string name="mordad1">1 مرداد</string>
+    <string name="mordad2">2 مرداد</string>
+    <string name="mordad3">3 مرداد</string>
+    <string name="mordad4">4 مرداد</string>
+    <string name="mordad5">5 مرداد</string>
+    <string name="mordad6">6 مرداد</string>
+    <string name="mordad7">7 مرداد</string>
+    <string name="mordad8">8 مرداد</string>
+    <string name="mordad9">9 مرداد</string>
+    <string name="mordad10">10 مرداد</string>
+    <string name="mordad11">11 مرداد</string>
+    <string name="mordad12">12 مرداد</string>
+    <string name="mordad13">13 مرداد</string>
+    <string name="mordad14">14 مرداد</string>
+    <string name="mordad15">15 مرداد</string>
+    <string name="mordad16">16 مرداد</string>
+    <string name="mordad17">17 مرداد</string>
+    <string name="mordad18">18 مرداد</string>
+    <string name="mordad19">19 مرداد</string>
+    <string name="mordad20">20 مرداد</string>
+    <string name="mordad21">21 مرداد</string>
+    <string name="mordad22">22 مرداد</string>
+    <string name="mordad23">23 مرداد</string>
+    <string name="mordad24">24 مرداد</string>
+    <string name="mordad25">25 مرداد</string>
+    <string name="mordad26">26 مرداد</string>
+    <string name="mordad27">27 مرداد</string>
+    <string name="mordad28">28 مرداد</string>
+    <string name="mordad29">29 مرداد</string>
+    <string name="mordad30">30 مرداد</string>
+    <string name="mordad31">31 مرداد</string>
+
+    /// Text Days Shahrivar ...
+    <string name="shahrivar1">1 شهریور</string>
+    <string name="shahrivar2">2 شهریور</string>
+    <string name="shahrivar3">3 شهریور</string>
+    <string name="shahrivar4">4 شهریور</string>
+    <string name="shahrivar5">5 شهریور</string>
+    <string name="shahrivar6">6 شهریور</string>
+    <string name="shahrivar7">7 شهریور</string>
+    <string name="shahrivar8">8 شهریور</string>
+    <string name="shahrivar9">9 شهریور</string>
+    <string name="shahrivar10">10 شهریور</string>
+    <string name="shahrivar11">11 شهریور</string>
+    <string name="shahrivar12">12 شهریور</string>
+    <string name="shahrivar13">13 شهریور</string>
+    <string name="shahrivar14">14 شهریور</string>
+    <string name="shahrivar15">15 شهریور</string>
+    <string name="shahrivar16">16 شهریور</string>
+    <string name="shahrivar17">17 شهریور</string>
+    <string name="shahrivar18">18 شهریور</string>
+    <string name="shahrivar19">19 شهریور</string>
+    <string name="shahrivar20">20 شهریور</string>
+    <string name="shahrivar21">21 شهریور</string>
+    <string name="shahrivar22">22 شهریور</string>
+    <string name="shahrivar23">23 شهریور</string>
+    <string name="shahrivar24">24 شهریور</string>
+    <string name="shahrivar25">25 شهریور</string>
+    <string name="shahrivar26">26 شهریور</string>
+    <string name="shahrivar27">27 شهریور</string>
+    <string name="shahrivar28">28 شهریور</string>
+    <string name="shahrivar29">29 شهریور</string>
+    <string name="shahrivar30">30 شهریور</string>
+    <string name="shahrivar31">31 شهریور</string>
+
+
+    /// Text Days Mehr ...
+    <string name="mehr1">1 مهر</string>
+    <string name="mehr2">2 مهر</string>
+    <string name="mehr3">3 مهر</string>
+    <string name="mehr4">4 مهر</string>
+    <string name="mehr5">5 مهر</string>
+    <string name="mehr6">6 مهر</string>
+    <string name="mehr7">7 مهر</string>
+    <string name="mehr8">8 مهر</string>
+    <string name="mehr9">9 مهر</string>
+    <string name="mehr10">10 مهر</string>
+    <string name="mehr11">11 مهر</string>
+    <string name="mehr12">12 مهر</string>
+    <string name="mehr13">13 مهر</string>
+    <string name="mehr14">14 مهر</string>
+    <string name="mehr15">15 مهر</string>
+    <string name="mehr16">16 مهر</string>
+    <string name="mehr17">17 مهر</string>
+    <string name="mehr18">18 مهر</string>
+    <string name="mehr19">19 مهر</string>
+    <string name="mehr20">20 مهر</string>
+    <string name="mehr21">21 مهر</string>
+    <string name="mehr22">22 مهر</string>
+    <string name="mehr23">23 مهر</string>
+    <string name="mehr24">24 مهر</string>
+    <string name="mehr25">25 مهر</string>
+    <string name="mehr26">26 مهر</string>
+    <string name="mehr27">27 مهر</string>
+    <string name="mehr28">28 مهر</string>
+    <string name="mehr29">29 مهر</string>
+    <string name="mehr30">30 مهر</string>
+
+
+    /// Text Days Aban ...
+    <string name="aban1">1 آبان</string>
+    <string name="aban2">2 آبان</string>
+    <string name="aban3">3 آبان</string>
+    <string name="aban4">4 آبان</string>
+    <string name="aban5">5 آبان</string>
+    <string name="aban6">6 آبان</string>
+    <string name="aban7">7 آبان</string>
+    <string name="aban8">8 آبان</string>
+    <string name="aban9">9 آبان</string>
+    <string name="aban10">10 آبان</string>
+    <string name="aban11">11 آبان</string>
+    <string name="aban12">12 آبان</string>
+    <string name="aban13">13 آبان</string>
+    <string name="aban14">14 آبان</string>
+    <string name="aban15">15 آبان</string>
+    <string name="aban16">16 آبان</string>
+    <string name="aban17">17 آبان</string>
+    <string name="aban18">18 آبان</string>
+    <string name="aban19">19 آبان</string>
+    <string name="aban20">20 آبان</string>
+    <string name="aban21">21 آبان</string>
+    <string name="aban22">22 آبان</string>
+    <string name="aban23">23 آبان</string>
+    <string name="aban24">24 آبان</string>
+    <string name="aban25">25 آبان</string>
+    <string name="aban26">26 آبان</string>
+    <string name="aban27">27 آبان</string>
+    <string name="aban28">28 آبان</string>
+    <string name="aban29">29 آبان</string>
+    <string name="aban30">30 آبان</string>
+
+
+    /// Text Days Azar ...
+    <string name="azar1">1 آذر</string>
+    <string name="azar2">2 آذر</string>
+    <string name="azar3">3 آذر</string>
+    <string name="azar4">4 آذر</string>
+    <string name="azar5">5 آذر</string>
+    <string name="azar6">6 آذر</string>
+    <string name="azar7">7 آذر</string>
+    <string name="azar8">8 آذر</string>
+    <string name="azar9">9 آذر</string>
+    <string name="azar10">10 آذر</string>
+    <string name="azar11">11 آذر</string>
+    <string name="azar12">12 آذر</string>
+    <string name="azar13">13 آذر</string>
+    <string name="azar14">14 آذر</string>
+    <string name="azar15">15 آذر</string>
+    <string name="azar16">16 آذر</string>
+    <string name="azar17">17 آذر</string>
+    <string name="azar18">18 آذر</string>
+    <string name="azar19">19 آذر</string>
+    <string name="azar20">20 آذر</string>
+    <string name="azar21">21 آذر</string>
+    <string name="azar22">22 آذر</string>
+    <string name="azar23">23 آذر</string>
+    <string name="azar24">24 آذر</string>
+    <string name="azar25">25 آذر</string>
+    <string name="azar26">26 آذر</string>
+    <string name="azar27">27 آذر</string>
+    <string name="azar28">28 آذر</string>
+    <string name="azar29">29 آذر</string>
+    <string name="azar30">30 آذر</string>
+
+    /// Text Days Dey ...
+    <string name="dey1">1 دی</string>
+    <string name="dey2">2 دی</string>
+    <string name="dey3">3 دی</string>
+    <string name="dey4">4 دی</string>
+    <string name="dey5">5 دی</string>
+    <string name="dey6">6 دی</string>
+    <string name="dey7">7 دی</string>
+    <string name="dey8">8 دی</string>
+    <string name="dey9">9 دی</string>
+    <string name="dey10">10 دی</string>
+    <string name="dey11">11 دی</string>
+    <string name="dey12">12 دی</string>
+    <string name="dey13">13 دی</string>
+    <string name="dey14">14 دی</string>
+    <string name="dey15">15 دی</string>
+    <string name="dey16">16 دی</string>
+    <string name="dey17">17 دی</string>
+    <string name="dey18">18 دی</string>
+    <string name="dey19">19 دی</string>
+    <string name="dey20">20 دی</string>
+    <string name="dey21">21 دی</string>
+    <string name="dey22">22 دی</string>
+    <string name="dey23">23 دی</string>
+    <string name="dey24">24 دی</string>
+    <string name="dey25">25 دی</string>
+    <string name="dey26">26 دی</string>
+    <string name="dey27">27 دی</string>
+    <string name="dey28">28 دی</string>
+    <string name="dey29">29 دی</string>
+    <string name="dey30">30 دی</string>
+
+    /// Text Days Bahman ...
+    <string name="bahman1">1 بهمن</string>
+    <string name="bahman2">2 بهمن</string>
+    <string name="bahman3">3 بهمن</string>
+    <string name="bahman4">4 بهمن</string>
+    <string name="bahman5">5 بهمن</string>
+    <string name="bahman6">6 بهمن</string>
+    <string name="bahman7">7 بهمن</string>
+    <string name="bahman8">8 بهمن</string>
+    <string name="bahman9">9 بهمن</string>
+    <string name="bahman10">10 بهمن</string>
+    <string name="bahman11">11 بهمن</string>
+    <string name="bahman12">12 بهمن</string>
+    <string name="bahman13">13 بهمن</string>
+    <string name="bahman14">14 بهمن</string>
+    <string name="bahman15">15 بهمن</string>
+    <string name="bahman16">16 بهمن</string>
+    <string name="bahman17">17 بهمن</string>
+    <string name="bahman18">18 بهمن</string>
+    <string name="bahman19">19 بهمن</string>
+    <string name="bahman20">20 بهمن</string>
+    <string name="bahman21">21 بهمن</string>
+    <string name="bahman22">22 بهمن</string>
+    <string name="bahman23">23 بهمن</string>
+    <string name="bahman24">24 بهمن</string>
+    <string name="bahman25">25 بهمن</string>
+    <string name="bahman26">26 بهمن</string>
+    <string name="bahman27">27 بهمن</string>
+    <string name="bahman28">28 بهمن</string>
+    <string name="bahman29">29 بهمن</string>
+    <string name="bahman30">30 بهمن</string>
+
+
+    /// Text Days Esfand ...
+    <string name="esfand1">1 اسفند</string>
+    <string name="esfand2">2 اسفند</string>
+    <string name="esfand3">3 اسفند</string>
+    <string name="esfand4">4 اسفند</string>
+    <string name="esfand5">5 اسفند</string>
+    <string name="esfand6">6 اسفند</string>
+    <string name="esfand7">7 اسفند</string>
+    <string name="esfand8">8 اسفند</string>
+    <string name="esfand9">9 اسفند</string>
+    <string name="esfand10">10 اسفند</string>
+    <string name="esfand11">11 اسفند</string>
+    <string name="esfand12">12 اسفند</string>
+    <string name="esfand13">13 اسفند</string>
+    <string name="esfand14">14 اسفند</string>
+    <string name="esfand15">15 اسفند</string>
+    <string name="esfand16">16 اسفند</string>
+    <string name="esfand17">17 اسفند</string>
+    <string name="esfand18">18 اسفند</string>
+    <string name="esfand19">19 اسفند</string>
+    <string name="esfand20">20 اسفند</string>
+    <string name="esfand21">21 اسفند</string>
+    <string name="esfand22">22 اسفند</string>
+    <string name="esfand23">23 اسفند</string>
+    <string name="esfand24">24 اسفند</string>
+    <string name="esfand25">25 اسفند</string>
+    <string name="esfand26">26 اسفند</string>
+    <string name="esfand27">27 اسفند</string>
+    <string name="esfand28">28 اسفند</string>
+    <string name="esfand29">29 اسفند</string>
+    <string name="esfand30">30 اسفند</string>
+
+    /// Text numbers
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+    <string name="n6">6</string>
+    <string name="n7">7</string>
+    <string name="n8">8</string>
+    <string name="n9">9</string>
+    <string name="n10">10</string>
+    <string name="n11">11</string>
+    <string name="n12">12</string>
+    <string name="nAll">1,2,3,4,5,6,7,8,9,10,11,12</string>
+
+
+</resources>

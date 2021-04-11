@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myfavoriteBg"
+        android:layoutDirection="rtl"
+        android:tag="layout/fragment_farvardin_reservation_0">
+
+        <RelativeLayout
+            android:id="@+id/rel_emptyBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_emptyBox"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/empty_box" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/animation_emptyBox"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/t46"
+                android:textColor="@color/popaGreenApp"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progressbar_fragmentFarvardinReservation"
+            style="@style/SpinKitView.Large.FadingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            app:SpinKit_Color="@color/colorProgressbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_fragmentFarvardinReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+    </RelativeLayout>
+
+</layout>

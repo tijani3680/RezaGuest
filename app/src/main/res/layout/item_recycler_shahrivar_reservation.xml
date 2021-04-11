@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="ReservInformation"
+            type="com.tijani.rezaguestmvvm.model.ReservInformation" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:elevation="4dp"
+            app:cardBackgroundColor="@color/shahrivar"
+            app:cardCornerRadius="8dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl">
+
+                <RelativeLayout
+                    android:id="@+id/rel_item_recycler_reservation_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgIconName"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_customer" />
+
+                    <TextView
+                        android:id="@+id/txt_res_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/imgIconName"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@string/t41"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txt_item_recycler_reservation_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/txt_res_name"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@{ReservInformation.customerName}"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_item_recycler_reservation_shenaseh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_item_recycler_reservation_name"
+                    android:layout_margin="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgIconShenaseh"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_shenaseh" />
+
+                    <TextView
+                        android:id="@+id/txt_res_shenaseh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/imgIconShenaseh"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@string/t42"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/txt_item_recycler_reservation_shenaseh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/txt_res_shenaseh"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@{ReservInformation.customerId}"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_item_recycler_reservation_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_item_recycler_reservation_shenaseh"
+                    android:layout_margin="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgIconPhone"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/txt_res_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/imgIconPhone"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@string/t43"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/txt_item_recycler_reservation_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/txt_res_phone"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@{ReservInformation.phone}"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_item_recycler_reservation_reservTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_item_recycler_reservation_phone"
+                    android:layout_margin="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgIconReservTime"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:id="@+id/txt_res_reservTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/imgIconReservTime"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@string/t44"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/txt_item_recycler_reservation_reservTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/txt_res_reservTime"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@{ReservInformation.reservDate}"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_item_recycler_reservation_reservistPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_item_recycler_reservation_reservTime"
+                    android:layout_margin="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgIconReservistPerson"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_person" />
+
+                    <TextView
+                        android:id="@+id/txt_res_reservistPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/imgIconReservistPerson"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@string/t45"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/txt_item_recycler_reservation_reservistPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/txt_res_reservistPerson"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:text="@{ReservInformation.reservistPerson}"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/img_item_recycler_reservation_goToDescription"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/rel_item_recycler_reservation_reservistPerson"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_arrow_to_left_black" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</layout>

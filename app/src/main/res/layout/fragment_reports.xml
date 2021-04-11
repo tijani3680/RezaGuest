@@ -1,0 +1,2453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="ReportsInformation"
+            type="com.tijani.rezaguestmvvm.model.Reports" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myfavoriteBg"
+        android:layoutDirection="rtl"
+        tools:context=".view.fragments.FragmentReports">
+
+        //// toolbar
+
+        <RelativeLayout
+            android:id="@+id/relative_fragmentReports_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_fragmentReports_imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/txt38"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+        ////
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_fragmentReports_Toolbar"
+            android:scrollbars="none">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    //// Farvardin
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n1"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m1"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastFarvardin}"
+                            android:id="@+id/txt_daramadiM1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedFarvardin}"
+                            android:id="@+id/txt_daryaftiM1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentFarvardin}"
+                            android:id="@+id/txt_defrentM1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Ordibehesht
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n2"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m2"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM2"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastOrdibehesht}"
+                            android:id="@+id/txt_daramadiM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM2"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM2"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedOrdibehesht}"
+                            android:id="@+id/txt_daryaftiM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM2"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM2"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentOrdibehesht}"
+                            android:id="@+id/txt_defrentM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM2"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Khordad
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n3"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m3"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM3"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastKhordad}"
+                            android:id="@+id/txt_daramadiM3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM3"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM3"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedKhordad}"
+                            android:id="@+id/txt_daryaftiM3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM3"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM3"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentKhordad}"
+                            android:id="@+id/txt_defrentM3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM3"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Tir
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n4"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m4"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM4"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastTir}"
+                            android:id="@+id/txt_daramadiM4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM4"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM4"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedTir}"
+                            android:id="@+id/txt_daryaftiM4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM4"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM4"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentTir}"
+                            android:id="@+id/txt_defrentM4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM4"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Mordad
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n5"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m5"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastMordad}"
+                            android:id="@+id/txt_daramadiM5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedMordad}"
+                            android:id="@+id/txt_daryaftiM5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentMordad}"
+                            android:id="@+id/txt_defrentM5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Shahrivar
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n6"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m6"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM6"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastShahrivar}"
+                            android:id="@+id/txt_daramadiM6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM6"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM6"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedShahrivar}"
+                            android:id="@+id/txt_daryaftiM6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM6"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM6"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentShahrivar}"
+                            android:id="@+id/txt_defrentM6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM6"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Mehr
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n7"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m7"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastMehr}"
+                            android:id="@+id/txt_daramadiM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedMehr}"
+                            android:id="@+id/txt_daryaftiM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentMehr}"
+                            android:id="@+id/txt_defrentM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM7"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Aban
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n8"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m8"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM8"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastAban}"
+                            android:id="@+id/txt_daramadiM8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM8"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM8"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedAban}"
+                            android:id="@+id/txt_daryaftiM8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM8"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM8"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentAban}"
+                            android:id="@+id/txt_defrentM8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM8"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Azar
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n9"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m9"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM9"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM9"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastAzar}"
+                            android:id="@+id/txt_daramadiM9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM9"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM9"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM9"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedAzar}"
+                            android:id="@+id/txt_daryaftiM9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM9"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM9"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM9"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentAzar}"
+                            android:id="@+id/txt_defrentM9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM9"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Dey
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n10"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m10"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM10"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastDey}"
+                            android:id="@+id/txt_daramadiM10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM10"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedDey}"
+                            android:id="@+id/txt_daryaftiM10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM10"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentDey}"
+                            android:id="@+id/txt_defrentM10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Bahman
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n11"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m11"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM11"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastBahman}"
+                            android:id="@+id/txt_daramadiM11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM11"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM11"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedBahman}"
+                            android:id="@+id/txt_daryaftiM11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM11"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM11"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentBahman}"
+                            android:id="@+id/txt_defrentM11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM11"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cobalt" />
+                    ///
+
+                    //// Esfand
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_number_suite"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_number_suite"
+                            android:fontFamily="@font/sahelblack"
+                            android:gravity="center"
+                            android:minEms="1"
+                            android:padding="2dp"
+                            android:text="@string/n12"
+
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:padding="4dp"
+                            android:text="@string/m12"
+                            android:textColor="@color/cobalt"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaramadiM12"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_price_suite" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiM12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaramadiM12"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt39"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.finalCoastEsfand}"
+                            android:id="@+id/txt_daramadiM12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiM12"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/emerald"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDaryaftiM12"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_money" />
+
+                        <TextView
+                            android:id="@+id/txt_text_daryaftiM12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDaryaftiM12"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt40"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.coastReceivedEsfand}"
+                            android:id="@+id/txt_daryaftiM12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daryaftiM12"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/popaGreenApp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgIconDefrentM12"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_defrent_price" />
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentM12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/imgIconDefrentM12"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:text="@string/txt41"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:text="@{ReportsInformation.defrentEsfand}"
+                            android:id="@+id/txt_defrentM12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentM12"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:maxLines="1"
+                            android:textColor="@color/weibo"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+                    ///
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/cobalt" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shape_daramadi_salaneh"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txt_text_daramadiSalaneh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sahelbold"
+                            android:text="@string/txt42"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txt_daramadiSalaneh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_daramadiSalaneh"
+                            android:fontFamily="@font/sahelbold"
+                            android:text="@{ReportsInformation.totalFinalCoast}"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shape_daryafti_salaneh"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txt_text_darayaftiSalaneh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sahelbold"
+                            android:text="@string/txt43"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txt_daryaftiSalaneh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_darayaftiSalaneh"
+                            android:fontFamily="@font/sahelbold"
+                            android:text="@{ReportsInformation.totalCoastReceived}"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_defrent_salaneh"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txt_text_defrentSalaneh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sahelbold"
+                            android:text="@string/txt41"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txt_defrentSalaneh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/txt_text_defrentSalaneh"
+                            android:fontFamily="@font/sahelbold"
+                            android:text="@{ReportsInformation.totalDefrente}"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_fragmentReports_prg"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:background="@drawable/shape_rel_prg"
+            android:layout_height="80dp">
+
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

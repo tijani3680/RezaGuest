@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_fragmentLockApp_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_fragmentLockApp_imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/t12"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:background="@color/myfavoriteBg">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    tools:context=".view.fragments.FragmentLockApp">
+
+
+                    <EditText
+                        android:id="@+id/edtpassLockApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/edt_shape_2"
+                        android:drawableRight="@drawable/ic_edt_lock"
+                        android:fontFamily="@font/sahelmamoli"
+                        android:gravity="center"
+                        android:hint="رمز ورود"
+                        android:inputType="numberPassword"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edtRePassLockApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/edtpassLockApp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/edt_shape_2"
+                        android:drawableRight="@drawable/ic_repeate"
+                        android:fontFamily="@font/sahelmamoli"
+                        android:gravity="center"
+                        android:hint="تکرار رمز ورود"
+                        android:inputType="numberPassword"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <android.widget.Button
+                        android:id="@+id/btn_fragmentLockApp_btnLock"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/edtRePassLockApp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="70dp"
+                        android:background="@drawable/btn_shape3"
+                        android:fontFamily="@font/sahelbold"
+                        android:gravity="center"
+                        android:text="@string/txt2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:textColor="@color/weibo"
+                        android:padding="6dp"
+                        android:id="@+id/txtdelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_fragmentLockApp_btnLock"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/sahelbold"
+                        android:text="@string/t14"
+                        android:textSize="14sp" />
+
+
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</layout>
+

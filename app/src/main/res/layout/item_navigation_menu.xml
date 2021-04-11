@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="NavigationMenuInformation"
+            type="com.tijani.rezaguestmvvm.model.NavigationMenu" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:image="@{NavigationMenuInformation.icon}"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_itemNavigationMenu_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:text="@{NavigationMenuInformation.title}"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:fontFamily="@font/sahelmamoli"
+            android:layout_marginRight="16dp"
+            android:id="@+id/txt_itemNavigationMenu_title"
+            android:layout_toLeftOf="@+id/img_itemNavigationMenu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>
+

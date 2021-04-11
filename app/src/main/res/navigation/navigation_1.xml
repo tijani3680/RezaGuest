@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_1"
+    app:startDestination="@id/fragmentSplash">
+
+    <fragment
+        android:id="@+id/fragmentPrimitiveLogin"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentPrimitiveLogin"
+        android:label="FragmentPrimitiveLogin">
+        <action
+            android:id="@+id/action_fragmentPrimitiveLogin_to_fragmentHome"
+            app:destination="@id/fragmentHome"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/navigation_1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLoginAcount"
+            app:destination="@id/fragmentLoginAcount"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLockApp"
+            app:destination="@id/fragmentLockApp"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentAboutWe"
+            app:destination="@id/fragmentAboutWe"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentErtebatBaMa"
+            app:destination="@id/fragmentErtebatBaMa"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLastCustomers"
+            app:destination="@id/fragmentLastCustomers"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentCustomerBlackList"
+            app:destination="@id/fragmentCustomerBlackList"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentFarvardin"
+            app:destination="@id/fragmentFarvardin"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentOrdibehesht"
+            app:destination="@id/fragmentOrdibehesht"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentKhordad"
+            app:destination="@id/fragmentKhordad"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentTir"
+            app:destination="@id/fragmentTir"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentMordad"
+            app:destination="@id/fragmentMordad"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentShahrivar"
+            app:destination="@id/fragmentShahrivar"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentMehr"
+            app:destination="@id/fragmentMehr"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentAban"
+            app:destination="@id/fragmentAban"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentAzar"
+            app:destination="@id/fragmentAzar"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentDey"
+            app:destination="@id/fragmentDey"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentBahman"
+            app:destination="@id/fragmentBahman"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentEsfand"
+            app:destination="@id/fragmentEsfand"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentReservation"
+            app:destination="@id/fragmentReservation"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentManagePanel"
+            app:destination="@id/fragmentManagePanel"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentChangePass"
+            app:destination="@id/fragmentChangePass"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLoginAcount"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentLoginAcount"
+        android:label="fragment_login_acount"
+        tools:layout="@layout/fragment_login_acount" />
+    <fragment
+        android:id="@+id/fragmentLockApp"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentLockApp"
+        android:label="FragmentLockApp" />
+    <fragment
+        android:id="@+id/fragmentAboutWe"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentAboutWe"
+        android:label="fragment_about_we"
+        tools:layout="@layout/fragment_about_we" />
+    <fragment
+        android:id="@+id/fragmentErtebatBaMa"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentErtebatBaMa"
+        android:label="fragment_ertebat_ba_ma"
+        tools:layout="@layout/fragment_ertebat_ba_ma" />
+    <fragment
+        android:id="@+id/fragmentLastCustomers"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentLastCustomers"
+        android:label="FragmentLastCustomers" />
+    <fragment
+        android:id="@+id/fragmentCustomerBlackList"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentCustomerBlackList"
+        android:label="FragmentCustomerBlackList" >
+        <action
+            android:id="@+id/action_fragmentCustomerBlackList_to_fragmentDetailsBlockCustomer"
+            app:destination="@id/fragmentDetailsBlockCustomer"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailsBlockCustomer"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsBlockCustomer"
+        android:label="fragment_details_block_customer"
+        tools:layout="@layout/fragment_details_block_customer" />
+    <fragment
+        android:id="@+id/fragmentFarvardin"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentFarvardin"
+        android:label="FragmentFarvardin" >
+        <action
+            android:id="@+id/action_fragmentFarvardin_to_fragmentSendInformationFarvardin"
+            app:destination="@id/fragmentSendInformationFarvardin"
+            app:enterAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationFarvardin"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationFarvardin"
+        android:label="fragment_send_information_farvardin"
+        tools:layout="@layout/fragment_send_information_farvardin" />
+    <fragment
+        android:id="@+id/fragmentOrdibehesht"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentOrdibehesht"
+        android:label="FragmentOrdibehesht" >
+        <action
+            android:id="@+id/action_fragmentOrdibehesht_to_fragmentSendInformationOrdibehesht"
+            app:destination="@id/fragmentSendInformationOrdibehesht"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationOrdibehesht"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationOrdibehesht"
+        android:label="fragment_send_information_ordibehesht"
+        tools:layout="@layout/fragment_send_information_ordibehesht" />
+    <fragment
+        android:id="@+id/fragmentKhordad"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentKhordad"
+        android:label="fragment_khordad"
+        tools:layout="@layout/fragment_khordad" >
+        <action
+            android:id="@+id/action_fragmentKhordad_to_fragmentSendInformationKhordad"
+            app:destination="@id/fragmentSendInformationKhordad"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationKhordad"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationKhordad"
+        android:label="fragment_send_information_khordad"
+        tools:layout="@layout/fragment_send_information_khordad" />
+    <fragment
+        android:id="@+id/fragmentTir"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentTir"
+        android:label="FragmentTir" >
+        <action
+            android:id="@+id/action_fragmentTir_to_fragmentSendInformationTir"
+            app:destination="@id/fragmentSendInformationTir"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationTir"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationTir"
+        android:label="fragment_send_information_tir"
+        tools:layout="@layout/fragment_send_information_tir" />
+    <fragment
+        android:id="@+id/fragmentMordad"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentMordad"
+        android:label="FragmentMordad" >
+        <action
+            android:id="@+id/action_fragmentMordad_to_fragmentSendInformationMordad"
+            app:destination="@id/fragmentSendInformationMordad"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationMordad"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationMordad"
+        android:label="fragment_send_information_mordad"
+        tools:layout="@layout/fragment_send_information_mordad" />
+    <fragment
+        android:id="@+id/fragmentShahrivar"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentShahrivar"
+        android:label="FragmentShahrivar" >
+        <action
+            android:id="@+id/action_fragmentShahrivar_to_fragmentSendInformationShahrivar"
+            app:destination="@id/fragmentSendInformationShahrivar"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationShahrivar"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationShahrivar"
+        android:label="fragment_send_information_shahrivar"
+        tools:layout="@layout/fragment_send_information_shahrivar" />
+    <fragment
+        android:id="@+id/fragmentMehr"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentMehr"
+        android:label="FragmentMehr" >
+        <action
+            android:id="@+id/action_fragmentMehr_to_fragmentSendInformationMehr"
+            app:destination="@id/fragmentSendInformationMehr"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationMehr"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationMehr"
+        android:label="FragmentSendInformationMehr" />
+    <fragment
+        android:id="@+id/fragmentAban"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentAban"
+        android:label="FragmentAban" >
+        <action
+            android:id="@+id/action_fragmentAban_to_fragmentSendInformationAban"
+            app:destination="@id/fragmentSendInformationAban"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationAban"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationAban"
+        android:label="FragmentSendInformationAban" />
+    <fragment
+        android:id="@+id/fragmentAzar"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentAzar"
+        android:label="FragmentAzar" >
+        <action
+            android:id="@+id/action_fragmentAzar_to_fragmentSendInformationAzar"
+            app:destination="@id/fragmentSendInformationAzar"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationAzar"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationAzar"
+        android:label="FragmentSendInformationAzar" />
+    <fragment
+        android:id="@+id/fragmentDey"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDey"
+        android:label="FragmentDey" >
+        <action
+            android:id="@+id/action_fragmentDey_to_fragmentSendInformationDey"
+            app:destination="@id/fragmentSendInformationDey"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationDey"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationDey"
+        android:label="FragmentSendInformationDey" />
+    <fragment
+        android:id="@+id/fragmentBahman"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentBahman"
+        android:label="FragmentBahman" >
+        <action
+            android:id="@+id/action_fragmentBahman_to_fragmentSendInformationBahman"
+            app:destination="@id/fragmentSendInformationBahman"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationBahman"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationBahman"
+        android:label="FragmentSendInformationBahman" />
+    <fragment
+        android:id="@+id/fragmentEsfand"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentEsfand"
+        android:label="FragmentEsfand" >
+        <action
+            android:id="@+id/action_fragmentEsfand_to_fragmentSendInformationEsfand"
+            app:destination="@id/fragmentSendInformationEsfand"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendInformationEsfand"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSendInformationEsfand"
+        android:label="FragmentSendInformationEsfand" />
+    <fragment
+        android:id="@+id/fragmentReservation"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentReservation"
+        android:label="fragment_reservation"
+        tools:layout="@layout/fragment_reservation" >
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsFarvardin"
+            app:destination="@id/fragmentDetailsFarvardin"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsOrdibehesht"
+            app:destination="@id/fragmentDetailsOrdibehesht"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsKhordad"
+            app:destination="@id/fragmentDetailsKhordad"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsTir"
+            app:destination="@id/fragmentDetailsTir"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsMordad"
+            app:destination="@id/fragmentDetailsMordad"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsShahrivar"
+            app:destination="@id/fragmentDetailsShahrivar"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsMehr"
+            app:destination="@id/fragmentDetailsMehr"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsAban2"
+            app:destination="@id/fragmentDetailsAban2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsAzar"
+            app:destination="@id/fragmentDetailsAzar"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsDey"
+            app:destination="@id/fragmentDetailsDey"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsBahman"
+            app:destination="@id/fragmentDetailsBahman"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentReservation_to_fragmentDetailsEsfand"
+            app:destination="@id/fragmentDetailsEsfand"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailsFarvardin"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsFarvardin"
+        android:label="fragment_details_farvardin"
+        tools:layout="@layout/fragment_details_farvardin" />
+    <fragment
+        android:id="@+id/fragmentDetailsOrdibehesht"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsOrdibehesht"
+        android:label="FragmentDetailsOrdibehesht" />
+    <fragment
+        android:id="@+id/fragmentDetailsKhordad"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsKhordad"
+        android:label="FragmentDetailsKhordad" />
+    <fragment
+        android:id="@+id/fragmentDetailsTir"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsTir"
+        android:label="FragmentDetailsTir" />
+    <fragment
+        android:id="@+id/fragmentDetailsMordad"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsMordad"
+        android:label="FragmentDetailsMordad" />
+    <fragment
+        android:id="@+id/fragmentDetailsShahrivar"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsShahrivar"
+        android:label="FragmentDetailsShahrivar" />
+    <fragment
+        android:id="@+id/fragmentDetailsMehr"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsMehr"
+        android:label="FragmentDetailsMehr" />
+    <fragment
+        android:id="@+id/fragmentDetailsAban2"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsAban"
+        android:label="FragmentDetailsAban" />
+    <fragment
+        android:id="@+id/fragmentDetailsAzar"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsAzar"
+        android:label="FragmentDetailsAzar" />
+    <fragment
+        android:id="@+id/fragmentDetailsDey"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsDey"
+        android:label="FragmentDetailsDey" />
+    <fragment
+        android:id="@+id/fragmentDetailsBahman"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsBahman"
+        android:label="FragmentDetailsBahman" />
+    <fragment
+        android:id="@+id/fragmentDetailsEsfand"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentDetailsEsfand"
+        android:label="FragmentDetailsEsfand" />
+    <fragment
+        android:id="@+id/fragmentManagePanel"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentManagePanel"
+        android:label="FragmentManagePanel" >
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentCreateOperator"
+            app:destination="@id/fragmentCreateOperator"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentOperators"
+            app:destination="@id/fragmentOperators"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentActivateSuites"
+            app:destination="@id/fragmentActivateSuites"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentSuitesPrice"
+            app:destination="@id/fragmentSuitesPrice"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentActivateMonths"
+            app:destination="@id/fragmentActivateMonths"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentReports"
+            app:destination="@id/fragmentReports"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_fragmentManagePanel_to_fragmentReset"
+            app:destination="@id/fragmentReset"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCreateOperator"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentCreateOperator"
+        android:label="FragmentCreateOperator" />
+    <fragment
+        android:id="@+id/fragmentOperators"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentOperators"
+        android:label="FragmentOperators" />
+    <fragment
+        android:id="@+id/fragmentActivateSuites"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentActivateSuites"
+        android:label="fragment_activate_suites"
+        tools:layout="@layout/fragment_activate_suites" />
+    <fragment
+        android:id="@+id/fragmentSuitesPrice"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSuitesPrice"
+        android:label="FragmentSuitesPrice" />
+    <fragment
+        android:id="@+id/fragmentActivateMonths"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentActivateMonths"
+        android:label="FragmentActivateMonths" />
+    <fragment
+        android:id="@+id/fragmentReports"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentReports"
+        android:label="FragmentReports" />
+    <fragment
+        android:id="@+id/fragmentReset"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentReset"
+        android:label="FragmentReset" />
+    <fragment
+        android:id="@+id/fragmentChangePass"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentChangePass"
+        android:label="FragmentChangePass" />
+    <fragment
+        android:id="@+id/fragmentSplash"
+        android:name="com.tijani.rezaguestmvvm.view.fragments.FragmentSplash"
+        android:label="FragmentSplash" >
+        <action
+            app:popUpTo="@id/navigation_1"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_fragmentSplash_to_fragmentPrimitiveLogin"
+            app:destination="@id/fragmentPrimitiveLogin"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+</navigation>

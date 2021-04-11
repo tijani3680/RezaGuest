@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myfavoriteBg"
+        android:layoutDirection="rtl"
+        tools:context=".view.fragments.FragmentSendInformationFarvardin">
+
+        <RelativeLayout
+            android:id="@+id/relative_fragmentSendInformationFarvardin_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_fragmentSendInformationFarvardin_imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:id="@+id/txt_fragmentSendInformationFarvardin_titleToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/t36"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_fragmentSendInformationFarvardin_Toolbar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                tools:context=".view.fragments.FragmentLoginAcount">
+
+
+                <EditText
+                    android:id="@+id/edt_fragmentSendInformation_edtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_shape_2"
+                    android:drawableStart="@drawable/ic_full_name"
+                    android:fontFamily="@font/sahelmamoli"
+                    android:gravity="center"
+                    android:hint="@string/e1"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_fragmentSendInformation_edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_shape_2"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:fontFamily="@font/sahelmamoli"
+                    android:gravity="center"
+                    android:hint="@string/e2"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_fragmentSendInformation_edtIdPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_shape_2"
+                    android:drawableStart="@drawable/ic_shenaseh"
+                    android:fontFamily="@font/sahelmamoli"
+                    android:gravity="center"
+                    android:hint="@string/e3"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_shape_2"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_textNafaratAvaliyeh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:text="@string/e4"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:background="?attr/selectableItemBackground"
+                            android:id="@+id/img_fragmentSendInformation_imgPlusNafaratAvaliyeh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toLeftOf="@+id/txt_fragmentSendInformation_textNafaratAvaliyeh"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_person" />
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_valueTextNafaratAvaliyeh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/img_fragmentSendInformation_imgPlusNafaratAvaliyeh"
+                            android:background="@drawable/txt_shape_number_person"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:text="0"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:background="?attr/selectableItemBackground"
+                            android:id="@+id/img_fragmentSendInformation_imgMinesNafaratAvaliyeh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txt_fragmentSendInformation_valueTextNafaratAvaliyeh"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_mines_person" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_textNafaratMazad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:text="@string/e5"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:background="?attr/selectableItemBackground"
+                            android:id="@+id/img_fragmentSendInformation_imgPlusNafaratMazad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toLeftOf="@+id/txt_fragmentSendInformation_textNafaratMazad"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_person" />
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_valueTextNafaratMazad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/img_fragmentSendInformation_imgPlusNafaratMazad"
+                            android:background="@drawable/txt_shape_number_person"
+                            android:fontFamily="@font/sahelsemibold"
+                            android:text="0"
+                            android:textColor="@color/cobalt"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:background="?attr/selectableItemBackground"
+                            android:id="@+id/img_fragmentSendInformation_imgMinesNafaratMazad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txt_fragmentSendInformation_valueTextNafaratMazad"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_mines_person" />
+
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/chk_fragmentSendInformation_checkBoxSpatialCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/edt_shape"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/sahelsemibold"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/e6"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/prg_fragmentSendInformation_progressBarCalculatePrice"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    app:SpinKit_Color="@color/colorProgressbar" />
+
+
+                <android.widget.Button
+                    android:id="@+id/btn_fragmentSendInformation_btnCalculatePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_shape3"
+                    android:fontFamily="@font/sahelbold"
+                    android:gravity="center"
+                    android:text="@string/txt6"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/lil_fragmentSendInformation_linearDaysSelected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_cadr_select_days"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:background="@drawable/shape_txt_rozhaye_reservshodeh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/sahelbold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/txt7"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    //// Layout S 1
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s1"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s1"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 2
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s2"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s2"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 3
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s3"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s3"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 4
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s4"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s4"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 5
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s5"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s5"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 6
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s6"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s6"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 7
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s7"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s7"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 8
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s8"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s8"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 9
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s9"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s9"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 10
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s10"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s10"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 11
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s11"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s11"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    //// Layout S 12
+
+                    <LinearLayout
+                        android:id="@+id/lil_fragmentSendInformation_linearDaysSelectedSuite12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_s12"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/shape_number_suite"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_suite_room" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:text="@string/s12"
+                                android:textColor="@color/cobalt"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtDaysSelectedSuite12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_shape"
+                            android:fontFamily="@font/sahelmamoli"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/shape_price_suite_reserve"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:scaleType="centerCrop"
+                                android:text="@string/e7"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_fragmentSendInformation_txtPriceDaysSelectedSuite12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/sahelsemibold"
+                                android:padding="4dp"
+                                android:textColor="@color/popaGreenApp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    ///
+
+                    /// final price
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_final_price"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sahelbold"
+                            android:scaleType="centerCrop"
+                            android:text="@string/e8"
+                            android:textColor="@color/emerald"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txt_fragmentSendInformation_txtFinalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/sahelbold"
+                            android:padding="4dp"
+                            android:textColor="@color/emerald"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    ///
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_fragmentSendInformation_edtPriceRecived"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_shape_2"
+                    android:drawableStart="@drawable/ic_money"
+                    android:fontFamily="@font/sahelmamoli"
+                    android:gravity="center"
+                    android:hint="@string/e9"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_fragmentSendInformation_edtShomarehFishPardakhti"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_shape_2"
+                    android:drawableStart="@drawable/ic_shomareh_fish_pardakhti"
+                    android:fontFamily="@font/sahelmamoli"
+                    android:gravity="center"
+                    android:hint="@string/e10"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/prg_fragmentSendInformation_progressBarSaveData"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    app:SpinKit_Color="@color/colorProgressbar" />
+
+
+                <android.widget.Button
+                    android:id="@+id/btn_fragmentSendInformation_btnSaveReservation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/btn_shape3"
+                    android:fontFamily="@font/sahelbold"
+                    android:gravity="center"
+                    android:text="@string/txt8"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

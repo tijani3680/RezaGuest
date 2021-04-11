@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#F30B38</color>
+    <color name="colorPrimaryDark">#BD0803</color>
+    <color name="colorAccent">#ffcb05</color>
+
+
+    <color name="colorToolbar">#F50909</color>
+    <color name="colorNavigationimageLine">#f50909</color>
+
+    <color name="colorAccentActivityReservInfo">#f50909</color>
+
+
+    <color name="colorSolidBtnShape">#16B24D</color>
+    <color name="yellow100">#FFF9C4</color>
+    <color name="yellow200">#FFF59D</color>
+
+    <color name="backgroundActivity1">#FAFAFA</color>
+    <color name="backgroundActivity2">#E7E1E1</color>
+
+
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray300">#E0E0E0</color>
+    <color name="gray400">#BDBDBD</color>
+    <color name="gray500">#9E9E9E</color>
+    <color name="gray700">#616161</color>
+    <color name="gray800">#424242</color>
+    <color name="gray900">#212121</color>
+
+
+    <color name="green500">#4CAF50</color>
+    <color name="green600">#43A047</color>
+    <color name="green700">#388E3C</color>
+    <color name="green800">#058F3E</color>
+
+    <color name="myfavoriteBg">#f0f4f7</color>
+    <color name="sorati">#ec407a</color>
+
+
+    <color name="bgItemFarvardin">#0091EA</color>
+    <color name="bgItemOrdibehesht">#D50000</color>
+    <color name="bgItemKhordad">#DD2C00</color>
+    <color name="bgItemTir">#6200EA</color>
+    <color name="bgItemMordad">#9716AF</color>
+    <color name="bgItemShahrivar">#C51162</color>
+    <color name="bgItemMehr">#F50057</color>
+    <color name="bgItemAban">#048B3C</color>
+    <color name="bgItemAzar">#048291</color>
+    <color name="bgItemDey">#A88D07</color>
+    <color name="bgItemBahman">#E53935</color>
+    <color name="bgItemEsfand">#1A237E</color>
+
+
+    //// color suites
+
+    <color name="bgSuite1">#3b1070</color>
+    <color name="bgSuite2">#ff3300</color>
+    <color name="bgSuite3">#164b1a</color>
+    <color name="bgSuite4">#c97000</color>
+    <color name="bgSuite5">#11519a</color>
+    <color name="bgSuite6">#98100e</color>
+    <color name="bgSuite7">#aa00c7</color>
+    <color name="bgSuite8">#D50000</color>
+    <color name="bgSuite9">#0050ef</color>
+    <color name="bgSuite10">#9716AF</color>
+    <color name="bgSuite11">#DD2C00</color>
+    <color name="bgSuite12">#048B3C</color>
+
+
+    <color name="suiteReserv">#FF80AB</color>
+    <color name="suiteNotReserv">#66BB6A</color>
+
+
+    /// My Favorit Color social
+    <color name="massanger">#0084ff</color>
+    <color name="facebock">#3b5999</color>
+    <color name="twitter">#55acee</color>
+    <color name="linkedin">#0077B5</color>
+    <color name="dropbox">#007ee5</color>
+    <color name="skype">#00AFF0</color>
+    <color name="cobalt">#0050ef</color>
+    <color name="soundcloud">#ff3300</color>
+    <color name="reddit">#ff5700</color>
+    <color name="blogger">#f57d00</color>
+    <color name="hacknews">#ff6600</color>
+    <color name="snapchat">#FFFC00</color>
+    <color name="line">#00c300</color>
+    <color name="wechat">#09b83e</color>
+    <color name="flicker">#ff0084</color>
+    <color name="watsup">#25D366</color>
+    <color name="emerald">#008a00</color>
+    <color name="weibo">#df2029</color>
+    <color name="gold">#FFD700</color>
+    <color name="myYellow">#fff59d</color>
+
+    <color name="popaGreenApp">#28d6bf</color>
+    <color name="colorProgressbar">#0050ef</color>
+
+
+    //// shape color suites
+    <color name="shape_color_s1">#ff6600</color>
+    <color name="shape_color_s2">#3b5999</color>
+    <color name="shape_color_s3">#ff0084</color>
+    <color name="shape_color_s4">#008a00</color>
+    <color name="shape_color_s5">#FFD700</color>
+    <color name="shape_color_s6">#34465d</color>
+    <color name="shape_color_s7">#a4c400</color>
+    <color name="shape_color_s8">#8e44ad</color>
+    <color name="shape_color_s9">#df2029</color>
+    <color name="shape_color_s10">#00AFF0</color>
+    <color name="shape_color_s11">#28d6bf</color>
+    <color name="shape_color_s12">#ff3300</color>
+
+
+    /// Months Reservation Color
+
+    <color name="farvardin">#ffab91</color>
+    <color name="ordibehesht">#ff80ab</color>
+    <color name="khordad">#aed581</color>
+    <color name="tir">#9fa8da</color>
+    <color name="mordad">#ffe082</color>
+    <color name="shahrivar">#81d4fa</color>
+    <color name="mehr">#D2FFD700</color>
+    <color name="aban">#b2dfdb</color>
+    <color name="azar">#dce775</color>
+    <color name="dey">#ffccbc</color>
+    <color name="bahman">#8c9eff</color>
+    <color name="esfand">#ea80fc</color>
+
+
+    <color name="btnPanelColor1">#1464bd</color>
+    <color name="btnPanelColor2">#c84332</color>
+    <color name="btnPanelColor3">#0991a7</color>
+    <color name="btnPanelColor4">#419e69</color>
+    <color name="btnPanelColor5">#b7a342</color>
+    <color name="btnPanelColor6">#8f60bc</color>
+    <color name="btnPanelColor7">#c87031</color>
+
+
+
+
+</resources>

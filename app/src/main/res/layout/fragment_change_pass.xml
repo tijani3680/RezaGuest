@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_fragmentChangePass_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            android:layoutDirection="rtl">
+
+            <ImageView
+                android:id="@+id/img_fragmentChangePass_imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sahelbold"
+                android:gravity="center"
+                android:text="@string/t8"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_fragmentChangePass_Toolbar"
+            android:background="@color/myfavoriteBg">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/myfavoriteBg"
+                    android:layoutDirection="rtl"
+                    tools:context=".view.fragments.FragmentLoginAcount">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_fragmentChangePass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/animation_fragmentChangePass_changeAnimation"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/change_pass_anim" />
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+
+                                <EditText
+                                    android:id="@+id/edt_fragmentChangePass_oldUserName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@color/white"
+                                    android:drawablePadding="8dp"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/sahelbold"
+                                    android:hint="@string/t51"
+                                    android:inputType="textPersonName"
+                                    android:textDirection="ltr"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+
+                                <EditText
+                                    android:id="@+id/edt_fragmentChangePass_oldPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@color/white"
+                                    android:drawablePadding="8dp"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/sahelbold"
+                                    android:hint="@string/t52"
+                                    android:inputType="textPersonName"
+                                    android:textDirection="ltr"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp,TextFields" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp">
+
+                                <EditText
+                                    android:id="@+id/edt_fragmentChangePass_newUserName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@color/white"
+                                    android:drawablePadding="8dp"
+                                    android:fontFamily="@font/sahelbold"
+                                    android:hint="@string/t53"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/emerald"
+                                    android:textDirection="ltr"
+                                    android:textSize="12sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+
+                                <EditText
+                                    android:id="@+id/edt_fragmentChangePass_newPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@color/white"
+                                    android:drawablePadding="8dp"
+                                    android:fontFamily="@font/sahelbold"
+                                    android:hint="@string/t54"
+                                    android:inputType="textPassword"
+                                    android:textColor="@color/emerald"
+                                    android:textDirection="ltr"
+                                    android:textSize="12sp"
+                                    tools:ignore="TextFields" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+
+                                <EditText
+                                    android:id="@+id/edt_fragmentChangePass_repeateNewPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@color/white"
+                                    android:drawablePadding="8dp"
+                                    android:fontFamily="@font/sahelbold"
+                                    android:hint="@string/t55"
+                                    android:inputType="textPassword"
+                                    android:textColor="@color/emerald"
+                                    android:textDirection="ltr"
+                                    android:textSize="12sp"
+                                    tools:ignore="TextFields" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.github.ybq.android.spinkit.SpinKitView
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/fragmentChangePass_progressbar2"
+                                style="@style/SpinKitView.Large.Circle"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="40dp"
+                                android:visibility="gone"
+                                app:SpinKit_Color="@color/colorProgressbar" />
+
+
+
+                            <android.widget.Button
+                                android:id="@+id/fragmentChangePass_btnConfirm"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="70dp"
+                                android:layout_marginBottom="30dp"
+                                android:background="@drawable/btn_shape3"
+                                android:fontFamily="@font/sahelbold"
+                                android:gravity="center"
+                                android:text="@string/e20"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_fragmentChangePass_prg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_rel_prg">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>
